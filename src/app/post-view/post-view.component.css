@@ -1,0 +1,23 @@
+.mat-card-title {
+  color: #3f51b5;
+}
+.detailUser {
+  color: #3f51b5;
+}
+.detailUser > span {
+  background-color: #3f51b5;
+  color: White;
+  padding: 2px;
+}
+
+.tags {
+  background-color: #dddddd;
+  padding: 3px;
+}
+
+.example-card {
+  margin-top: 30px;
+}
+.link {
+  margin-top: 30px;
+}

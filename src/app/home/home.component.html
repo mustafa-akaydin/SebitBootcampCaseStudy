@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6" *ngFor="let category of categoryData">
+      <mat-card class="example-card">
+        <img
+          mat-card-image
+          [src]="'assets/icons/' + category.icon"
+        />
+        <mat-card-header>
+          <div class="catDetails">
+            <mat-card-title>
+              <a
+                [routerLink]="'/categories/' + category.id"
+                >{{ category.name }}</a
+              >
+            </mat-card-title>
+            <p>{{ category.description }}</p>
+          </div>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.navbar
+{
+  height: 220px;
+  display: flex;
+  justify-content: center;
+}
+.navbarFlex{
+  flex-direction: column;
+}
+.navbarTitle{
+  font-size: 30px;
+}
+.search{
+  width: 80% !important;
+}
+.input-group-text
+{
+background-color: white;
+border: none;
+}

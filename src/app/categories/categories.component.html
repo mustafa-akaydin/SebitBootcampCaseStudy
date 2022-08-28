@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div style="margin-top: 30px; display: flex;">
+      <a href="home"> Home Page</a>
+      <p> /{{  postObj.name}}</p>
+    </div>
+    <div class="col-lg-6" >
+      <div style="display: flex;margin-top:20px;" class="example-card">
+        <img style="width: 70px;" mat-card-image [src]="'assets/icons/'+postObj.icon">
+        <div style="display: flex;flex-direction: column;margin-left:30px;">
+          <div>
+            <h1>
+              {{postObj.name}}
+            </h1>
+          </div>
+          <p>{{postObj.description}}</p>
+        </div>
+        </div>
+    </div>
+    <div class="" *ngFor="let comment of commentData">
+      <mat-card class="example-card" style="margin-top:30px">
+        <mat-card-content>
+          <mat-card-title>{{comment.title}}</mat-card-title>
+          <div class='detail'>
+            {{comment.description |truncate:[280, '...']}}
+              <span mat-raised-button color="primary" [routerLink]="'/post-view/'+comment.id">read more</span>
+          </div>
+        </mat-card-content>
+        <mat-card-header>
+          <div mat-card-avatar>
+            <img class="avatar" width="48px" src="assets/images/profile.png" />
+          </div>
+          <mat-card-subtitle
+            >Written by <span><b>{{comment.author}}</b></span></mat-card-subtitle
+          >
+          <mat-card-subtitle><span>{{comment.date}}</span></mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>
