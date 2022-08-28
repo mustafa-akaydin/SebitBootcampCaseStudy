@@ -16,9 +16,6 @@ import { BaseService } from './services/base.service';
 import { HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import { TruncatePipe } from './truncate.pipe';
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
