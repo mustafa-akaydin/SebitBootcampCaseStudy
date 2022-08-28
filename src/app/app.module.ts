@@ -10,20 +10,20 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import { HomeComponent } from './home/home.component';
 import { PostViewComponent } from './post-view/post-view.component';
-import { SerachComponent } from './serach/serach.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { BaseService } from './services/base.service';
 import { HttpClientModule } from '@angular/common/http';
 import {MatButtonModule} from '@angular/material/button';
 import { TruncatePipe } from './truncate.pipe';
+import { SearchComponent } from './search/search.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PostViewComponent,
-    SerachComponent,
     CategoriesComponent,
     TruncatePipe,
+    SearchComponent,
 
   ],
   imports: [
